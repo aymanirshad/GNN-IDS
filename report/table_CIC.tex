@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{In-dataset results on NF-CSE-CIC-IDS2018-v3 (chronological) (mean $\pm$ std over seeds, time-ordered split).}
+\begin{tabular}{lcccccccc}
+\toprule
+Model & Accuracy & Balanced acc. & PR-AUC & ROC-AUC & Macro-F1 & MCC & TPR @ 1% FPR & FPR @ 95% TPR \\
+\midrule
+IP-identity only (shortcut probe) & 0.9387 {\scriptsize $\pm$ 0.0000} & 0.4999 {\scriptsize $\pm$ 0.0000} & 0.0416 {\scriptsize $\pm$ 0.0016} & 0.2520 {\scriptsize $\pm$ 0.0108} & 0.4843 {\scriptsize $\pm$ 0.0000} & -0.0031 {\scriptsize $\pm$ 0.0000} & 0.0019 {\scriptsize $\pm$ 0.0008} & 0.9479 {\scriptsize $\pm$ 0.0544} \\
+LightGBM & 0.9441 {\scriptsize $\pm$ 0.0255} & 0.6111 {\scriptsize $\pm$ 0.1959} & 0.4668 {\scriptsize $\pm$ 0.2544} & 0.8619 {\scriptsize $\pm$ 0.0379} & 0.6157 {\scriptsize $\pm$ 0.2225} & 0.2434 {\scriptsize $\pm$ 0.4395} & 0.2517 {\scriptsize $\pm$ 0.4246} & 0.8155 {\scriptsize $\pm$ 0.0127} \\
+XGBoost & 0.9330 {\scriptsize $\pm$ 0.0033} & 0.5006 {\scriptsize $\pm$ 0.0029} & 0.5125 {\scriptsize $\pm$ 0.2003} & 0.8700 {\scriptsize $\pm$ 0.0495} & 0.4899 {\scriptsize $\pm$ 0.0048} & 0.0054 {\scriptsize $\pm$ 0.0208} & 0.2918 {\scriptsize $\pm$ 0.4933} & 0.8129 {\scriptsize $\pm$ 0.0244} \\
+XGBoost + topology stats & 0.9657 {\scriptsize $\pm$ 0.0251} & 0.7275 {\scriptsize $\pm$ 0.2103} & 0.7679 {\scriptsize $\pm$ 0.0959} & 0.9089 {\scriptsize $\pm$ 0.0084} & 0.7553 {\scriptsize $\pm$ 0.2405} & 0.5330 {\scriptsize $\pm$ 0.4704} & 0.7449 {\scriptsize $\pm$ 0.1687} & 0.7444 {\scriptsize $\pm$ 0.0279} \\
+E-GraphSAGE (static) & 0.9835 {\scriptsize $\pm$ 0.0096} & 0.9281 {\scriptsize $\pm$ 0.0049} & 0.8560 {\scriptsize $\pm$ 0.0167} & \textbf{0.9116} {\scriptsize $\pm$ 0.0088} & 0.9297 {\scriptsize $\pm$ 0.0357} & 0.8613 {\scriptsize $\pm$ 0.0706} & \textbf{0.8654} {\scriptsize $\pm$ 0.0001} & 0.7529 {\scriptsize $\pm$ 0.0789} \\
+E-GraphSAGE + degree features & \textbf{0.9907} {\scriptsize $\pm$ 0.0006} & \textbf{0.9299} {\scriptsize $\pm$ 0.0015} & \textbf{0.8776} {\scriptsize $\pm$ 0.0016} & 0.8964 {\scriptsize $\pm$ 0.0029} & \textbf{0.9567} {\scriptsize $\pm$ 0.0025} & \textbf{0.9158} {\scriptsize $\pm$ 0.0056} & 0.8645 {\scriptsize $\pm$ 0.0015} & 0.9222 {\scriptsize $\pm$ 0.0491} \\
+TE-GS + degree features & 0.9664 {\scriptsize $\pm$ 0.0283} & 0.7812 {\scriptsize $\pm$ 0.2459} & 0.6599 {\scriptsize $\pm$ 0.3782} & 0.8985 {\scriptsize $\pm$ 0.0397} & 0.7774 {\scriptsize $\pm$ 0.2549} & 0.5601 {\scriptsize $\pm$ 0.5005} & 0.5712 {\scriptsize $\pm$ 0.4944} & \textbf{0.7134} {\scriptsize $\pm$ 0.0576} \\
+\bottomrule
+\end{tabular}
+\end{table}

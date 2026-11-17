@@ -1,0 +1,299 @@
+{
+ "dataset": "CIC",
+ "model": "tegs_nomem",
+ "model_base": "tegs_nomem",
+ "tag": "",
+ "seed": 0,
+ "delta": 60,
+ "holdout": null,
+ "args": {
+  "cmd": "tegs",
+  "data": "data/CIC",
+  "target": "data/UNSW",
+  "results": "results",
+  "seeds": [
+   0
+  ],
+  "delta": 60,
+  "cap": 2048,
+  "hidden": 128,
+  "layers": 2,
+  "lr": 0.002,
+  "epochs": 20,
+  "patience": 6,
+  "device": null,
+  "nomem": true,
+  "no_shuffle": false,
+  "node_feats": false,
+  "adv": false,
+  "adv_prob": 0.5,
+  "lam": 0.5,
+  "adv_ks": [
+   1,
+   5,
+   10,
+   20,
+   50
+  ],
+  "sel_k": 5,
+  "adv_real_only": true,
+  "adv_mem": false,
+  "force": false,
+  "robust": false,
+  "budgets": [
+   0,
+   1,
+   5,
+   10,
+   100
+  ],
+  "latency_caps": [],
+  "lat_events": 5000,
+  "holdout": null,
+  "tag": "",
+  "no_scores": false
+ },
+ "thr": 0.08,
+ "thr_op": 0.07707460224628448,
+ "device": "cuda",
+ "history": [
+  {
+   "epoch": 0,
+   "loss": 0.011140143617670586,
+   "val_pr_auc": 0.01108560034295367,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 1,
+   "loss": 0.0011668633273307313,
+   "val_pr_auc": 0.012470631093089105,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 2,
+   "loss": 0.0007972950313953643,
+   "val_pr_auc": 0.012940004958746622,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 3,
+   "loss": 0.00022204915814577264,
+   "val_pr_auc": 0.015737896519656572,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 4,
+   "loss": 0.00015838838558881842,
+   "val_pr_auc": 0.015416797158733505,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 5,
+   "loss": 0.00013478817616371399,
+   "val_pr_auc": 0.01572275709968491,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 6,
+   "loss": 0.00012644455629460356,
+   "val_pr_auc": 0.01618936853723897,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 7,
+   "loss": 0.000105799443306441,
+   "val_pr_auc": 0.016154679228247804,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 8,
+   "loss": 0.00014669489749568574,
+   "val_pr_auc": 0.01680226120260137,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 9,
+   "loss": 0.0001253373920917511,
+   "val_pr_auc": 0.01729005069698652,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 10,
+   "loss": 0.0023106488775699696,
+   "val_pr_auc": 0.01138528616033655,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 11,
+   "loss": 0.00888832579267786,
+   "val_pr_auc": 0.013638925658870323,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 12,
+   "loss": 0.00020081876836558607,
+   "val_pr_auc": 0.015305222791163555,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 13,
+   "loss": 0.002338647366838252,
+   "val_pr_auc": 0.013832624621520111,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 14,
+   "loss": 0.0008768451974747028,
+   "val_pr_auc": 0.014474952739744758,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 15,
+   "loss": 0.00039093667997958814,
+   "val_pr_auc": 0.015473526721423032,
+   "val_pr_auc_attacked": null
+  }
+ ],
+ "val": {
+  "f1_macro": 0.5232735713027293,
+  "mcc": 0.04745877517857517,
+  "accuracy": 0.977844103341545,
+  "balanced_accuracy": 0.5202392061903648,
+  "recall": 0.04980694980694981,
+  "fpr": 0.009328537426220234,
+  "n": 189972,
+  "n_attack": 2590,
+  "prevalence": 0.013633588107721138,
+  "pr_auc": 0.01728980702021323,
+  "roc_auc": 0.4568905717303109,
+  "tpr_at_1pct_fpr": 0.05405405405405406,
+  "tpr_at_0p1pct_fpr": 0.002702702702702703,
+  "fpr_at_95tpr": 0.9308044529357142,
+  "fpr_at_99tpr": 0.9874320905956816
+ },
+ "test": {
+  "f1_macro": 0.9408778112907805,
+  "mcc": 0.8821313639945132,
+  "accuracy": 0.9867857256213036,
+  "balanced_accuracy": 0.9299459803902739,
+  "recall": 0.8652045769764216,
+  "fpr": 0.005312616195873849,
+  "n": 189038,
+  "n_attack": 11536,
+  "prevalence": 0.061024767507062073,
+  "pr_auc": 0.8425388527287145,
+  "roc_auc": 0.9054100795934069,
+  "tpr_at_1pct_fpr": 0.8652912621359223,
+  "tpr_at_0p1pct_fpr": 0.8651178918169209,
+  "fpr_at_95tpr": 0.8087796193845703,
+  "fpr_at_99tpr": 0.9442147130736555
+ },
+ "test_op": {
+  "f1_macro": 0.9394823058760031,
+  "mcc": 0.8792611966915682,
+  "accuracy": 0.9864365894687841,
+  "balanced_accuracy": 0.929760066992115,
+  "recall": 0.8652045769764216,
+  "fpr": 0.0056844429921916375,
+  "n": 189038,
+  "n_attack": 11536,
+  "prevalence": 0.061024767507062073,
+  "pr_auc": 0.8425388527287145,
+  "roc_auc": 0.9054100795934069,
+  "tpr_at_1pct_fpr": 0.8652912621359223,
+  "tpr_at_0p1pct_fpr": 0.8651178918169209,
+  "fpr_at_95tpr": 0.8087796193845703,
+  "fpr_at_99tpr": 0.9442147130736555
+ },
+ "test_cold": {
+  "f1_macro": 0.9408778112907805,
+  "mcc": 0.8821313639945132,
+  "accuracy": 0.9867857256213036,
+  "balanced_accuracy": 0.9299459803902739,
+  "recall": 0.8652045769764216,
+  "fpr": 0.005312616195873849,
+  "n": 189038,
+  "n_attack": 11536,
+  "prevalence": 0.061024767507062073,
+  "pr_auc": 0.8425388592157679,
+  "roc_auc": 0.9054100593264008,
+  "tpr_at_1pct_fpr": 0.8652912621359223,
+  "tpr_at_0p1pct_fpr": 0.8651178918169209,
+  "fpr_at_95tpr": 0.8087796193845703,
+  "fpr_at_99tpr": 0.9442147130736555
+ },
+ "test_cold_op": {
+  "f1_macro": 0.9394823058760031,
+  "mcc": 0.8792611966915682,
+  "accuracy": 0.9864365894687841,
+  "balanced_accuracy": 0.929760066992115,
+  "recall": 0.8652045769764216,
+  "fpr": 0.0056844429921916375,
+  "n": 189038,
+  "n_attack": 11536,
+  "prevalence": 0.061024767507062073,
+  "pr_auc": 0.8425388592157679,
+  "roc_auc": 0.9054100593264008,
+  "tpr_at_1pct_fpr": 0.8652912621359223,
+  "tpr_at_0p1pct_fpr": 0.8651178918169209,
+  "fpr_at_95tpr": 0.8087796193845703,
+  "fpr_at_99tpr": 0.9442147130736555
+ },
+ "test_clean": {
+  "f1_macro": 0.9553143016075611,
+  "mcc": 0.9124096123836093,
+  "accuracy": 0.9889588466100921,
+  "balanced_accuracy": 0.9322477523015325,
+  "recall": 0.866307371349096,
+  "fpr": 0.001811866746031227,
+  "n": 164385,
+  "n_attack": 11504,
+  "prevalence": 0.06998205432369134,
+  "pr_auc": 0.8684064731770408,
+  "roc_auc": 0.9108770142305906,
+  "tpr_at_1pct_fpr": 0.8665681502086231,
+  "tpr_at_0p1pct_fpr": 0.866307371349096,
+  "fpr_at_95tpr": 0.7794493756581916,
+  "fpr_at_99tpr": 0.9358062807019839
+ },
+ "per_family": {
+  "Bot": {
+   "n": 9961,
+   "recall": 1.0
+  },
+  "Infilteration": {
+   "n": 1575,
+   "recall": 0.012698412698412698
+  }
+ },
+ "seconds_train": 43.78613829612732,
+ "latency": {
+  "p50_ms_per_batch": 1.662058999954752,
+  "p95_ms_per_batch": 1.942599649555632,
+  "p99_ms_per_batch": 2.160851700018611,
+  "mean_us_per_event": 1.0665923571085112,
+  "flows_per_sec": 937565.3156853284,
+  "batch_cap": 2048
+ },
+ "transfer": {
+  "target": "UNSW",
+  "metrics": {
+   "f1_macro": 0.5439104102261987,
+   "mcc": 0.17495365780689542,
+   "accuracy": 0.9332675452558308,
+   "balanced_accuracy": 0.5324159089051578,
+   "recall": 0.06916653537104143,
+   "fpr": 0.004334717560725866,
+   "n": 94242,
+   "n_attack": 6347,
+   "prevalence": 0.06734789159822585,
+   "pr_auc": 0.3480419006425667,
+   "roc_auc": 0.6866686588288788,
+   "tpr_at_1pct_fpr": 0.2820230029935403,
+   "tpr_at_0p1pct_fpr": 0.02709941704742398,
+   "fpr_at_95tpr": 0.9706240400477842,
+   "fpr_at_99tpr": 0.9998065874054269
+  },
+  "transfer_drop_f1": 0.39696740106458184
+ }
+}

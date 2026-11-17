@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\caption{In-dataset results on NF-UNSW-NB15-v3 (mean $\pm$ std over seeds, time-ordered split).}
+\begin{tabular}{lcccccccc}
+\toprule
+Model & Accuracy & Balanced acc. & PR-AUC & ROC-AUC & Macro-F1 & MCC & TPR @ 1% FPR & FPR @ 95% TPR \\
+\midrule
+IP-identity only (shortcut probe) & \textbf{1.0000} {\scriptsize $\pm$ 0.0000} & \textbf{1.0000} {\scriptsize $\pm$ 0.0000} & \textbf{1.0000} {\scriptsize $\pm$ 0.0000} & \textbf{1.0000} {\scriptsize $\pm$ 0.0000} & \textbf{1.0000} {\scriptsize $\pm$ 0.0000} & \textbf{1.0000} {\scriptsize $\pm$ 0.0000} & \textbf{1.0000} {\scriptsize $\pm$ 0.0000} & \textbf{0.0000} {\scriptsize $\pm$ 0.0000} \\
+LightGBM & 0.9999 {\scriptsize $\pm$ 0.0000} & 0.9999 {\scriptsize $\pm$ 0.0000} & 0.9998 {\scriptsize $\pm$ 0.0001} & 1.0000 {\scriptsize $\pm$ 0.0000} & 0.9997 {\scriptsize $\pm$ 0.0000} & 0.9994 {\scriptsize $\pm$ 0.0000} & \textbf{1.0000} {\scriptsize $\pm$ 0.0000} & 0.0000 {\scriptsize $\pm$ 0.0000} \\
+XGBoost & 0.9999 {\scriptsize $\pm$ 0.0000} & 1.0000 {\scriptsize $\pm$ 0.0000} & 0.9997 {\scriptsize $\pm$ 0.0001} & 1.0000 {\scriptsize $\pm$ 0.0000} & 0.9997 {\scriptsize $\pm$ 0.0000} & 0.9995 {\scriptsize $\pm$ 0.0000} & \textbf{1.0000} {\scriptsize $\pm$ 0.0000} & 0.0001 {\scriptsize $\pm$ 0.0000} \\
+XGBoost + topology stats & 0.9999 {\scriptsize $\pm$ 0.0000} & 1.0000 {\scriptsize $\pm$ 0.0000} & 0.9998 {\scriptsize $\pm$ 0.0000} & 1.0000 {\scriptsize $\pm$ 0.0000} & 0.9997 {\scriptsize $\pm$ 0.0000} & 0.9994 {\scriptsize $\pm$ 0.0000} & \textbf{1.0000} {\scriptsize $\pm$ 0.0000} & 0.0000 {\scriptsize $\pm$ 0.0000} \\
+E-GraphSAGE (static) & 0.9999 {\scriptsize $\pm$ 0.0001} & 0.9997 {\scriptsize $\pm$ 0.0002} & 0.9989 {\scriptsize $\pm$ 0.0004} & 0.9999 {\scriptsize $\pm$ 0.0001} & 0.9995 {\scriptsize $\pm$ 0.0002} & 0.9989 {\scriptsize $\pm$ 0.0004} & 0.9999 {\scriptsize $\pm$ 0.0002} & 0.0001 {\scriptsize $\pm$ 0.0000} \\
+E-GraphSAGE + degree features & 0.9999 {\scriptsize $\pm$ 0.0001} & 0.9996 {\scriptsize $\pm$ 0.0006} & 0.9991 {\scriptsize $\pm$ 0.0003} & 1.0000 {\scriptsize $\pm$ 0.0000} & 0.9995 {\scriptsize $\pm$ 0.0003} & 0.9989 {\scriptsize $\pm$ 0.0006} & \textbf{1.0000} {\scriptsize $\pm$ 0.0000} & 0.0001 {\scriptsize $\pm$ 0.0000} \\
+E-GraphSAGE + degree feat. + adv. & 0.9998 {\scriptsize $\pm$ 0.0000} & 0.9994 {\scriptsize $\pm$ 0.0002} & 0.9990 {\scriptsize $\pm$ 0.0002} & 1.0000 {\scriptsize $\pm$ 0.0000} & 0.9994 {\scriptsize $\pm$ 0.0001} & 0.9988 {\scriptsize $\pm$ 0.0002} & \textbf{1.0000} {\scriptsize $\pm$ 0.0000} & 0.0001 {\scriptsize $\pm$ 0.0000} \\
+TE-GS (GRU memory) & 0.9998 {\scriptsize $\pm$ 0.0002} & 0.9999 {\scriptsize $\pm$ 0.0001} & 0.9994 {\scriptsize $\pm$ 0.0004} & 1.0000 {\scriptsize $\pm$ 0.0000} & 0.9992 {\scriptsize $\pm$ 0.0007} & 0.9985 {\scriptsize $\pm$ 0.0014} & \textbf{1.0000} {\scriptsize $\pm$ 0.0000} & 0.0001 {\scriptsize $\pm$ 0.0000} \\
+TE-GS + degree features & 0.9999 {\scriptsize $\pm$ 0.0000} & 0.9999 {\scriptsize $\pm$ 0.0000} & 0.9995 {\scriptsize $\pm$ 0.0001} & 1.0000 {\scriptsize $\pm$ 0.0000} & 0.9995 {\scriptsize $\pm$ 0.0000} & 0.9991 {\scriptsize $\pm$ 0.0000} & \textbf{1.0000} {\scriptsize $\pm$ 0.0000} & 0.0001 {\scriptsize $\pm$ 0.0000} \\
+TE-GS + degree feat. + adv. & 0.9997 {\scriptsize $\pm$ 0.0002} & 0.9985 {\scriptsize $\pm$ 0.0015} & 0.9990 {\scriptsize $\pm$ 0.0005} & 1.0000 {\scriptsize $\pm$ 0.0000} & 0.9989 {\scriptsize $\pm$ 0.0008} & 0.9978 {\scriptsize $\pm$ 0.0016} & \textbf{1.0000} {\scriptsize $\pm$ 0.0000} & 0.0001 {\scriptsize $\pm$ 0.0000} \\
+\bottomrule
+\end{tabular}
+\end{table}

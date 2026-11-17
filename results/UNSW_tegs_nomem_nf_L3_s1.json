@@ -1,0 +1,279 @@
+{
+ "dataset": "UNSW",
+ "model": "tegs_nomem_nf_L3",
+ "model_base": "tegs_nomem_nf",
+ "tag": "_L3",
+ "seed": 1,
+ "delta": 60,
+ "holdout": null,
+ "args": {
+  "cmd": "tegs",
+  "data": "data/UNSW",
+  "target": null,
+  "results": "results",
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "delta": 60,
+  "cap": 2048,
+  "hidden": 128,
+  "layers": 3,
+  "lr": 0.002,
+  "epochs": 20,
+  "patience": 6,
+  "device": null,
+  "nomem": true,
+  "no_shuffle": false,
+  "node_feats": true,
+  "no_edge": false,
+  "adv": false,
+  "adv_prob": 0.5,
+  "lam": 0.5,
+  "adv_ks": [
+   1,
+   5,
+   10,
+   20,
+   50
+  ],
+  "sel_k": 5,
+  "adv_real_only": true,
+  "adv_mem": false,
+  "force": false,
+  "robust": false,
+  "budgets": [
+   0,
+   1,
+   5,
+   10,
+   100
+  ],
+  "latency_caps": [],
+  "lat_events": 5000,
+  "holdout": null,
+  "tag": "_L3",
+  "no_scores": false
+ },
+ "thr": 0.78,
+ "thr_op": 0.11846468597650528,
+ "device": "cuda",
+ "history": [
+  {
+   "epoch": 0,
+   "loss": 0.0007835714223233055,
+   "val_pr_auc": 0.9990498539969859,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 1,
+   "loss": 0.008739177653852027,
+   "val_pr_auc": 0.9975742478345287,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 2,
+   "loss": 0.00042714094847775576,
+   "val_pr_auc": 0.9988512332823687,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 3,
+   "loss": 3.118522479181433e-05,
+   "val_pr_auc": 0.9967612245799288,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 4,
+   "loss": 6.064637965254123e-05,
+   "val_pr_auc": 0.9990651744467394,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 5,
+   "loss": 0.00037867040111777485,
+   "val_pr_auc": 0.9987298886016166,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 6,
+   "loss": 0.003178720170638981,
+   "val_pr_auc": 0.9979890555298839,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 7,
+   "loss": 0.0004212988003362877,
+   "val_pr_auc": 0.9984401125676721,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 8,
+   "loss": 4.329669379981493e-06,
+   "val_pr_auc": 0.9984215531626595,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 9,
+   "loss": 1.2862252783072128e-05,
+   "val_pr_auc": 0.9986892337924855,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 10,
+   "loss": 6.034156684292836e-06,
+   "val_pr_auc": 0.9986666297101754,
+   "val_pr_auc_attacked": null
+  }
+ ],
+ "val": {
+  "f1_macro": 0.9985116364146727,
+  "mcc": 0.9970276918249111,
+  "accuracy": 0.9996146682936228,
+  "balanced_accuracy": 0.9997929725688655,
+  "recall": 1.0,
+  "fpr": 0.0004140548622692507,
+  "n": 93426,
+  "n_attack": 6481,
+  "prevalence": 0.06937041080641364,
+  "pr_auc": 0.9990651744003056,
+  "roc_auc": 0.99994877731267,
+  "tpr_at_1pct_fpr": 1.0,
+  "tpr_at_0p1pct_fpr": 1.0,
+  "fpr_at_95tpr": 0.00013801828742308355,
+  "fpr_at_99tpr": 0.00013801828742308355
+ },
+ "test": {
+  "f1_macro": 0.9984415927744599,
+  "mcc": 0.9968880296122389,
+  "accuracy": 0.9996073937310329,
+  "balanced_accuracy": 0.9997895215882587,
+  "recall": 1.0,
+  "fpr": 0.0004209568234825644,
+  "n": 94242,
+  "n_attack": 6347,
+  "prevalence": 0.06734789159822585,
+  "pr_auc": 0.999149888198642,
+  "roc_auc": 0.9999560766502829,
+  "tpr_at_1pct_fpr": 1.0,
+  "tpr_at_0p1pct_fpr": 1.0,
+  "fpr_at_95tpr": 9.101769156379771e-05,
+  "fpr_at_99tpr": 0.00012514932590022187
+ },
+ "test_op": {
+  "f1_macro": 0.9771594473930718,
+  "mcc": 0.9553221410087751,
+  "accuracy": 0.9940260181235543,
+  "balanced_accuracy": 0.9967973149780989,
+  "recall": 1.0,
+  "fpr": 0.006405370043802264,
+  "n": 94242,
+  "n_attack": 6347,
+  "prevalence": 0.06734789159822585,
+  "pr_auc": 0.999149888198642,
+  "roc_auc": 0.9999560766502829,
+  "tpr_at_1pct_fpr": 1.0,
+  "tpr_at_0p1pct_fpr": 1.0,
+  "fpr_at_95tpr": 9.101769156379771e-05,
+  "fpr_at_99tpr": 0.00012514932590022187
+ },
+ "test_cold": {
+  "f1_macro": 0.9984415927744599,
+  "mcc": 0.9968880296122389,
+  "accuracy": 0.9996073937310329,
+  "balanced_accuracy": 0.9997895215882587,
+  "recall": 1.0,
+  "fpr": 0.0004209568234825644,
+  "n": 94242,
+  "n_attack": 6347,
+  "prevalence": 0.06734789159822585,
+  "pr_auc": 0.999149888327554,
+  "roc_auc": 0.9999560766502831,
+  "tpr_at_1pct_fpr": 1.0,
+  "tpr_at_0p1pct_fpr": 1.0,
+  "fpr_at_95tpr": 9.101769156379771e-05,
+  "fpr_at_99tpr": 0.00012514932590022187
+ },
+ "test_cold_op": {
+  "f1_macro": 0.9771594473930718,
+  "mcc": 0.9553221410087751,
+  "accuracy": 0.9940260181235543,
+  "balanced_accuracy": 0.9967973149780989,
+  "recall": 1.0,
+  "fpr": 0.006405370043802264,
+  "n": 94242,
+  "n_attack": 6347,
+  "prevalence": 0.06734789159822585,
+  "pr_auc": 0.999149888327554,
+  "roc_auc": 0.9999560766502831,
+  "tpr_at_1pct_fpr": 1.0,
+  "tpr_at_0p1pct_fpr": 1.0,
+  "fpr_at_95tpr": 9.101769156379771e-05,
+  "fpr_at_99tpr": 0.00012514932590022187
+ },
+ "test_clean": {
+  "f1_macro": 0.998385424479638,
+  "mcc": 0.996776048892537,
+  "accuracy": 0.9994188420821161,
+  "balanced_accuracy": 0.9996772448926186,
+  "recall": 1.0,
+  "fpr": 0.000645510214762993,
+  "n": 63666,
+  "n_attack": 6347,
+  "prevalence": 0.09969214337322904,
+  "pr_auc": 0.999149888198642,
+  "roc_auc": 0.999932646368161,
+  "tpr_at_1pct_fpr": 1.0,
+  "tpr_at_0p1pct_fpr": 1.0,
+  "fpr_at_95tpr": 0.00013956977616497146,
+  "fpr_at_99tpr": 0.0001919084422268358
+ },
+ "per_family": {
+  "Analysis": {
+   "n": 55,
+   "recall": 1.0
+  },
+  "Backdoor": {
+   "n": 168,
+   "recall": 1.0
+  },
+  "DoS": {
+   "n": 366,
+   "recall": 1.0
+  },
+  "Exploits": {
+   "n": 2792,
+   "recall": 1.0
+  },
+  "Fuzzers": {
+   "n": 1787,
+   "recall": 1.0
+  },
+  "Generic": {
+   "n": 295,
+   "recall": 1.0
+  },
+  "Reconnaissance": {
+   "n": 814,
+   "recall": 1.0
+  },
+  "Shellcode": {
+   "n": 69,
+   "recall": 1.0
+  },
+  "Worms": {
+   "n": 1,
+   "recall": 1.0
+  }
+ },
+ "seconds_train": 31.01648211479187,
+ "latency": {
+  "p50_ms_per_batch": 2.17428900032246,
+  "p95_ms_per_batch": 2.6166536000346245,
+  "p99_ms_per_batch": 3.3118637998995824,
+  "mean_us_per_event": 3.6365546890350755,
+  "flows_per_sec": 274985.55240079184,
+  "batch_cap": 2048
+ }
+}

@@ -1,0 +1,7 @@
+model,versus,delta_pr_auc,ci_low,ci_high
+tegs_nomem_nf,tegs_nomem,0.0327,0.0267,0.0385
+tegs_nomem_nf,topo,0.067,0.0597,0.0732
+tegs_nomem_nf,tegs_nf,0.6529,0.6475,0.6584
+tegs_nomem_nf,xgb,0.198,0.1919,0.2049
+tegs_nomem_nf,lgbm,0.2562,0.2477,0.2639
+tegs_nomem_nf,iponly,0.8354,0.8308,0.8411

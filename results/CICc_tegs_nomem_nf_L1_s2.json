@@ -1,0 +1,267 @@
+{
+ "dataset": "CICc",
+ "model": "tegs_nomem_nf_L1",
+ "model_base": "tegs_nomem_nf",
+ "tag": "_L1",
+ "seed": 2,
+ "delta": 60,
+ "holdout": null,
+ "args": {
+  "cmd": "tegs",
+  "data": "data/CICc",
+  "target": null,
+  "results": "results",
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "delta": 60,
+  "cap": 2048,
+  "hidden": 128,
+  "layers": 1,
+  "lr": 0.002,
+  "epochs": 20,
+  "patience": 6,
+  "device": null,
+  "nomem": true,
+  "no_shuffle": false,
+  "node_feats": true,
+  "no_edge": false,
+  "adv": false,
+  "adv_prob": 0.5,
+  "lam": 0.5,
+  "adv_ks": [
+   1,
+   5,
+   10,
+   20,
+   50
+  ],
+  "sel_k": 5,
+  "adv_real_only": true,
+  "adv_mem": false,
+  "force": false,
+  "robust": false,
+  "budgets": [
+   0,
+   1,
+   5,
+   10,
+   100
+  ],
+  "latency_caps": [],
+  "lat_events": 5000,
+  "holdout": null,
+  "tag": "_L1",
+  "no_scores": false
+ },
+ "thr": 0.9327460527420044,
+ "thr_op": 0.6468175053596497,
+ "device": "cuda",
+ "history": [
+  {
+   "epoch": 0,
+   "loss": 0.09416570064526249,
+   "val_pr_auc": 0.9735005019335096,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 1,
+   "loss": 0.03378784944469802,
+   "val_pr_auc": 0.9734208691624371,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 2,
+   "loss": 0.02874811835910963,
+   "val_pr_auc": 0.9923886887391116,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 3,
+   "loss": 0.03553852136584296,
+   "val_pr_auc": 0.9868339355856756,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 4,
+   "loss": 0.027245113815086475,
+   "val_pr_auc": 0.9891798139677982,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 5,
+   "loss": 0.021190611060690763,
+   "val_pr_auc": 0.9887341942929644,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 6,
+   "loss": 0.02683700570737682,
+   "val_pr_auc": 0.9898715712880435,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 7,
+   "loss": 0.018573523719529597,
+   "val_pr_auc": 0.9911767046295433,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 8,
+   "loss": 0.022280778285961797,
+   "val_pr_auc": 0.9913670962527935,
+   "val_pr_auc_attacked": null
+  }
+ ],
+ "val": {
+  "f1_macro": 0.9887975929120547,
+  "mcc": 0.9778328482538857,
+  "accuracy": 0.995255408996788,
+  "balanced_accuracy": 0.9808185563687521,
+  "recall": 0.9616866722770961,
+  "fpr": 4.955953959187719e-05,
+  "n": 183999,
+  "n_attack": 22577,
+  "prevalence": 0.12270175381387942,
+  "pr_auc": 0.9923886896644566,
+  "roc_auc": 0.9973013276811765,
+  "tpr_at_1pct_fpr": 0.9792266465872348,
+  "tpr_at_0p1pct_fpr": 0.9626168224299065,
+  "fpr_at_95tpr": 1.2389884897969298e-05,
+  "fpr_at_99tpr": 0.06180074587107086
+ },
+ "test": {
+  "f1_macro": 0.9881304776067574,
+  "mcc": 0.9765351459527352,
+  "accuracy": 0.994978370035434,
+  "balanced_accuracy": 0.9795784116235398,
+  "recall": 0.9591692130552234,
+  "fpr": 1.2389808143820893e-05,
+  "n": 184004,
+  "n_attack": 22581,
+  "prevalence": 0.12272015825742918,
+  "pr_auc": 0.9820277531931015,
+  "roc_auc": 0.9929175853185276,
+  "tpr_at_1pct_fpr": 0.9649705504627785,
+  "tpr_at_0p1pct_fpr": 0.9643948452238608,
+  "fpr_at_95tpr": 0.0,
+  "fpr_at_99tpr": 0.24932010927810783
+ },
+ "test_op": {
+  "f1_macro": 0.9796482347089284,
+  "mcc": 0.9592965067131695,
+  "accuracy": 0.9912338862198647,
+  "balanced_accuracy": 0.9797487190863021,
+  "recall": 0.9645277002789956,
+  "fpr": 0.005030262106391283,
+  "n": 184004,
+  "n_attack": 22581,
+  "prevalence": 0.12272015825742918,
+  "pr_auc": 0.9820277531931015,
+  "roc_auc": 0.9929175853185276,
+  "tpr_at_1pct_fpr": 0.9649705504627785,
+  "tpr_at_0p1pct_fpr": 0.9643948452238608,
+  "fpr_at_95tpr": 0.0,
+  "fpr_at_99tpr": 0.24932010927810783
+ },
+ "test_cold": {
+  "f1_macro": 0.9881304776067574,
+  "mcc": 0.9765351459527352,
+  "accuracy": 0.994978370035434,
+  "balanced_accuracy": 0.9795784116235398,
+  "recall": 0.9591692130552234,
+  "fpr": 1.2389808143820893e-05,
+  "n": 184004,
+  "n_attack": 22581,
+  "prevalence": 0.12272015825742918,
+  "pr_auc": 0.9820277535123277,
+  "roc_auc": 0.9929175851813569,
+  "tpr_at_1pct_fpr": 0.9649705504627785,
+  "tpr_at_0p1pct_fpr": 0.9643948452238608,
+  "fpr_at_95tpr": 0.0,
+  "fpr_at_99tpr": 0.24932010927810783
+ },
+ "test_cold_op": {
+  "f1_macro": 0.9796482347089284,
+  "mcc": 0.9592965067131695,
+  "accuracy": 0.9912338862198647,
+  "balanced_accuracy": 0.9797487190863021,
+  "recall": 0.9645277002789956,
+  "fpr": 0.005030262106391283,
+  "n": 184004,
+  "n_attack": 22581,
+  "prevalence": 0.12272015825742918,
+  "pr_auc": 0.9820277535123277,
+  "roc_auc": 0.9929175851813569,
+  "tpr_at_1pct_fpr": 0.9649705504627785,
+  "tpr_at_0p1pct_fpr": 0.9643948452238608,
+  "fpr_at_95tpr": 0.0,
+  "fpr_at_99tpr": 0.24932010927810783
+ },
+ "test_clean": {
+  "f1_macro": 0.9854949889712363,
+  "mcc": 0.9713968404973119,
+  "accuracy": 0.99481199984436,
+  "balanced_accuracy": 0.9745884754872516,
+  "recall": 0.9491913918247803,
+  "fpr": 1.4440850277264325e-05,
+  "n": 154202,
+  "n_attack": 15706,
+  "prevalence": 0.10185341305560239,
+  "pr_auc": 0.9717270442229028,
+  "roc_auc": 0.9893225496843218,
+  "tpr_at_1pct_fpr": 0.9504647905259137,
+  "tpr_at_0p1pct_fpr": 0.9498280911753471,
+  "fpr_at_95tpr": 0.005256469500924214,
+  "fpr_at_99tpr": 0.3200164625693161
+ },
+ "per_family": {
+  "Bot": {
+   "n": 1894,
+   "recall": 0.9382259767687434
+  },
+  "Brute_Force_-Web": {
+   "n": 13,
+   "recall": 0.0
+  },
+  "DDOS_attack-HOIC": {
+   "n": 12166,
+   "recall": 1.0
+  },
+  "DDoS_attacks-LOIC-HTTP": {
+   "n": 2523,
+   "recall": 1.0
+  },
+  "DoS_attacks-GoldenEye": {
+   "n": 1166,
+   "recall": 1.0
+  },
+  "DoS_attacks-Hulk": {
+   "n": 465,
+   "recall": 1.0
+  },
+  "FTP-BruteForce": {
+   "n": 2480,
+   "recall": 1.0
+  },
+  "Infilteration": {
+   "n": 792,
+   "recall": 0.0
+  },
+  "SSH-Bruteforce": {
+   "n": 1082,
+   "recall": 1.0
+  }
+ },
+ "seconds_train": 23.457568168640137,
+ "latency": {
+  "p50_ms_per_batch": 1.3493950000338373,
+  "p95_ms_per_batch": 1.532361800127546,
+  "p99_ms_per_batch": 1.6743825198864215,
+  "mean_us_per_event": 0.9268012597433777,
+  "flows_per_sec": 1078979.974926761,
+  "batch_cap": 2048
+ }
+}

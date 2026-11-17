@@ -1,0 +1,4 @@
+model,versus,delta_pr_auc,ci_low,ci_high
+xgb,iponly,-0.001,-0.0017,-0.0003
+xgb,lgbm,-0.0,-0.0,-0.0
+xgb,topo,0.0,0.0,0.0

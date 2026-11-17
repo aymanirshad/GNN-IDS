@@ -1,0 +1,5 @@
+model,Analysis,Backdoor,DoS,Exploits,Fuzzers,Generic,Reconnaissance,Shellcode,Worms
+iponly,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+lgbm,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+topo,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+xgb,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0

@@ -1,0 +1,258 @@
+{
+ "dataset": "CICc",
+ "model": "tegs_nf",
+ "model_base": "tegs_nf",
+ "tag": "",
+ "seed": 0,
+ "delta": 60,
+ "holdout": "DDOS_attack-HOIC",
+ "args": {
+  "cmd": "tegs",
+  "data": "data/CICc",
+  "target": null,
+  "results": "results",
+  "seeds": [
+   0
+  ],
+  "delta": 60,
+  "cap": 2048,
+  "hidden": 128,
+  "layers": 2,
+  "lr": 0.002,
+  "epochs": 20,
+  "patience": 6,
+  "device": null,
+  "nomem": false,
+  "no_shuffle": false,
+  "node_feats": true,
+  "adv": false,
+  "adv_prob": 0.5,
+  "lam": 0.5,
+  "adv_ks": [
+   1,
+   5,
+   10,
+   20,
+   50
+  ],
+  "sel_k": 5,
+  "adv_real_only": true,
+  "adv_mem": false,
+  "force": false,
+  "robust": false,
+  "budgets": [
+   0,
+   1,
+   5,
+   10,
+   100
+  ],
+  "latency_caps": [],
+  "lat_events": 5000,
+  "holdout": "DDOS_attack-HOIC",
+  "tag": "",
+  "no_scores": false
+ },
+ "thr": 0.8093954659910763,
+ "thr_op": 0.8081248998641968,
+ "device": "cuda",
+ "history": [
+  {
+   "epoch": 0,
+   "loss": 0.12234722484241832,
+   "val_pr_auc": 0.039558503828567744,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 1,
+   "loss": 0.029315457199559067,
+   "val_pr_auc": 0.8807285762024063,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 2,
+   "loss": 0.03953765618680703,
+   "val_pr_auc": 0.038453619219067904,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 3,
+   "loss": 0.045738918612701726,
+   "val_pr_auc": 0.0465139528017724,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 4,
+   "loss": 0.03022752867804633,
+   "val_pr_auc": 0.04882246861519922,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 5,
+   "loss": 0.04712566221603239,
+   "val_pr_auc": 0.05623525715862051,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 6,
+   "loss": 0.04811703075062145,
+   "val_pr_auc": 0.040885882488697046,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 7,
+   "loss": 0.037414639887183604,
+   "val_pr_auc": 0.0412056612127287,
+   "val_pr_auc_attacked": null
+  }
+ ],
+ "val": {
+  "f1_macro": 0.928076303510136,
+  "mcc": 0.856212573560497,
+  "accuracy": 0.9837924030890458,
+  "balanced_accuracy": 0.9237109882276089,
+  "recall": 0.855345307847469,
+  "fpr": 0.007923331392251366,
+  "n": 171833,
+  "n_attack": 10411,
+  "prevalence": 0.06058789638777185,
+  "pr_auc": 0.8807285762024063,
+  "roc_auc": 0.9371678411365556,
+  "tpr_at_1pct_fpr": 0.8755162808567861,
+  "tpr_at_0p1pct_fpr": 0.5031216982038229,
+  "fpr_at_95tpr": 0.9998761011510203,
+  "fpr_at_99tpr": 0.9998761011510203
+ },
+ "test": {
+  "f1_macro": 0.9219183443249008,
+  "mcc": 0.85141055240618,
+  "accuracy": 0.9694463163844265,
+  "balanced_accuracy": 0.8841422242290409,
+  "recall": 0.7710907400026571,
+  "fpr": 0.0028062915445754323,
+  "n": 184004,
+  "n_attack": 22581,
+  "prevalence": 0.12272015825742918,
+  "pr_auc": 0.9425047400407749,
+  "roc_auc": 0.9713957966835972,
+  "tpr_at_1pct_fpr": 0.7817191444134449,
+  "tpr_at_0p1pct_fpr": 0.6979318896417342,
+  "fpr_at_95tpr": 0.02080248787347528,
+  "fpr_at_99tpr": 0.9998451273982022
+ },
+ "test_op": {
+  "f1_macro": 0.921207501147294,
+  "mcc": 0.8494727876888939,
+  "accuracy": 0.9690713245364231,
+  "balanced_accuracy": 0.884652212210381,
+  "recall": 0.7727735707010318,
+  "fpr": 0.00346914628026985,
+  "n": 184004,
+  "n_attack": 22581,
+  "prevalence": 0.12272015825742918,
+  "pr_auc": 0.9425047400407749,
+  "roc_auc": 0.9713957966835972,
+  "tpr_at_1pct_fpr": 0.7817191444134449,
+  "tpr_at_0p1pct_fpr": 0.6979318896417342,
+  "fpr_at_95tpr": 0.02080248787347528,
+  "fpr_at_99tpr": 0.9998451273982022
+ },
+ "test_cold": {
+  "f1_macro": 0.9002874921089514,
+  "mcc": 0.8027646557142891,
+  "accuracy": 0.9592943631660181,
+  "balanced_accuracy": 0.8797083828837526,
+  "recall": 0.7742349763075151,
+  "fpr": 0.014818210540009789,
+  "n": 184004,
+  "n_attack": 22581,
+  "prevalence": 0.12272015825742918,
+  "pr_auc": 0.8943591126177011,
+  "roc_auc": 0.9702622627055486,
+  "tpr_at_1pct_fpr": 0.6929719675833665,
+  "tpr_at_0p1pct_fpr": 0.20915814180062886,
+  "fpr_at_95tpr": 0.03240554320016355,
+  "fpr_at_99tpr": 0.7520303798095687
+ },
+ "test_cold_op": {
+  "f1_macro": 0.9014692998693314,
+  "mcc": 0.8047183696181618,
+  "accuracy": 0.959566096389209,
+  "balanced_accuracy": 0.8827771492299878,
+  "recall": 0.7810105841193924,
+  "fpr": 0.015456285659416563,
+  "n": 184004,
+  "n_attack": 22581,
+  "prevalence": 0.12272015825742918,
+  "pr_auc": 0.8943591126177011,
+  "roc_auc": 0.9702622627055486,
+  "tpr_at_1pct_fpr": 0.6929719675833665,
+  "tpr_at_0p1pct_fpr": 0.20915814180062886,
+  "fpr_at_95tpr": 0.03240554320016355,
+  "fpr_at_99tpr": 0.7520303798095687
+ },
+ "test_clean": {
+  "f1_macro": 0.9413329556243082,
+  "mcc": 0.8857993573456585,
+  "accuracy": 0.9798770443963113,
+  "balanced_accuracy": 0.913973685001058,
+  "recall": 0.8312110021647778,
+  "fpr": 0.0032636321626617376,
+  "n": 154202,
+  "n_attack": 15706,
+  "prevalence": 0.10185341305560239,
+  "pr_auc": 0.9225128354908253,
+  "roc_auc": 0.9622985014078882,
+  "tpr_at_1pct_fpr": 0.845664077422641,
+  "tpr_at_0p1pct_fpr": 0.8051063287915446,
+  "fpr_at_95tpr": 0.2570326940850277,
+  "fpr_at_99tpr": 0.9998194893715342
+ },
+ "per_family": {
+  "Bot": {
+   "n": 1894,
+   "recall": 0.9978880675818373
+  },
+  "Brute_Force_-Web": {
+   "n": 13,
+   "recall": 0.0
+  },
+  "DDOS_attack-HOIC": {
+   "n": 12166,
+   "recall": 0.9880815387144501
+  },
+  "DDoS_attacks-LOIC-HTTP": {
+   "n": 2523,
+   "recall": 0.8989298454221165
+  },
+  "DoS_attacks-GoldenEye": {
+   "n": 1166,
+   "recall": 0.6989708404802745
+  },
+  "DoS_attacks-Hulk": {
+   "n": 465,
+   "recall": 0.8989247311827957
+  },
+  "FTP-BruteForce": {
+   "n": 2480,
+   "recall": 0.0
+  },
+  "Infilteration": {
+   "n": 792,
+   "recall": 0.0
+  },
+  "SSH-Bruteforce": {
+   "n": 1082,
+   "recall": 0.0
+  }
+ },
+ "seconds_train": 27.248512744903564,
+ "latency": {
+  "p50_ms_per_batch": 2.3991540001588874,
+  "p95_ms_per_batch": 3.0475767998723313,
+  "p99_ms_per_batch": 3.7777391610143236,
+  "mean_us_per_event": 1.7231008184731893,
+  "flows_per_sec": 580349.094654881,
+  "batch_cap": 2048
+ }
+}

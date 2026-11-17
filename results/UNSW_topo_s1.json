@@ -1,0 +1,126 @@
+{
+ "dataset": "UNSW",
+ "model": "topo",
+ "model_base": "topo",
+ "tag": "",
+ "seed": 1,
+ "delta": 60,
+ "holdout": null,
+ "params": {
+  "n_estimators": 150,
+  "max_depth": 6,
+  "learning_rate": 0.1,
+  "subsample": 0.7082677339729204,
+  "colsample_bytree": 0.9014052434699227
+ },
+ "thr": 0.98,
+ "thr_op": 1.0247454156342428e-05,
+ "val": {
+  "f1_macro": 0.999668591884515,
+  "mcc": 0.9993374033049812,
+  "accuracy": 0.9999143707319161,
+  "balanced_accuracy": 0.9999539939041924,
+  "recall": 1.0,
+  "fpr": 9.201219161538904e-05,
+  "n": 93426,
+  "n_attack": 6481,
+  "prevalence": 0.06937041080641364,
+  "pr_auc": 0.9998931652291662,
+  "roc_auc": 0.9999926742337796,
+  "tpr_at_1pct_fpr": 1.0,
+  "tpr_at_0p1pct_fpr": 1.0,
+  "fpr_at_95tpr": 4.600609580769452e-05,
+  "fpr_at_99tpr": 6.900914371154177e-05
+ },
+ "test": {
+  "f1_macro": 0.9997045202342669,
+  "mcc": 0.9994092149949344,
+  "accuracy": 0.9999257231383035,
+  "balanced_accuracy": 0.9999601797599409,
+  "recall": 1.0,
+  "fpr": 7.9640480118323e-05,
+  "n": 94242,
+  "n_attack": 6347,
+  "prevalence": 0.06734789159822585,
+  "pr_auc": 0.9998552973232904,
+  "roc_auc": 0.9999905981607009,
+  "tpr_at_1pct_fpr": 1.0,
+  "tpr_at_0p1pct_fpr": 1.0,
+  "fpr_at_95tpr": 4.5508845781898855e-05,
+  "fpr_at_99tpr": 6.826326867284829e-05
+ },
+ "test_op": {
+  "f1_macro": 0.9682223005032311,
+  "mcc": 0.9383577025365384,
+  "accuracy": 0.9915536597270855,
+  "balanced_accuracy": 0.995471869844701,
+  "recall": 1.0,
+  "fpr": 0.009056260310597872,
+  "n": 94242,
+  "n_attack": 6347,
+  "prevalence": 0.06734789159822585,
+  "pr_auc": 0.9998552973232904,
+  "roc_auc": 0.9999905981607009,
+  "tpr_at_1pct_fpr": 1.0,
+  "tpr_at_0p1pct_fpr": 1.0,
+  "fpr_at_95tpr": 4.5508845781898855e-05,
+  "fpr_at_99tpr": 6.826326867284829e-05
+ },
+ "test_clean": {
+  "f1_macro": 0.9996938983942335,
+  "mcc": 0.9993879840907726,
+  "accuracy": 0.9998900512047246,
+  "balanced_accuracy": 0.9999389382229278,
+  "recall": 1.0,
+  "fpr": 0.00012212355414435003,
+  "n": 63666,
+  "n_attack": 6347,
+  "prevalence": 0.09969214337322904,
+  "pr_auc": 0.9998552973232904,
+  "roc_auc": 0.9999855828841189,
+  "tpr_at_1pct_fpr": 1.0,
+  "tpr_at_0p1pct_fpr": 1.0,
+  "fpr_at_95tpr": 6.978488808248573e-05,
+  "fpr_at_99tpr": 0.00010467733212372861
+ },
+ "per_family": {
+  "Analysis": {
+   "n": 55,
+   "recall": 1.0
+  },
+  "Backdoor": {
+   "n": 168,
+   "recall": 1.0
+  },
+  "DoS": {
+   "n": 366,
+   "recall": 1.0
+  },
+  "Exploits": {
+   "n": 2792,
+   "recall": 1.0
+  },
+  "Fuzzers": {
+   "n": 1787,
+   "recall": 1.0
+  },
+  "Generic": {
+   "n": 295,
+   "recall": 1.0
+  },
+  "Reconnaissance": {
+   "n": 814,
+   "recall": 1.0
+  },
+  "Shellcode": {
+   "n": 69,
+   "recall": 1.0
+  },
+  "Worms": {
+   "n": 1,
+   "recall": 1.0
+  }
+ },
+ "seconds_fit": 33.463709354400635,
+ "sec_per_flow_infer": 2.4986529350280763e-05
+}

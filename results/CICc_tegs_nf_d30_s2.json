@@ -1,0 +1,260 @@
+{
+ "dataset": "CICc",
+ "model": "tegs_nf_d30",
+ "model_base": "tegs_nf",
+ "tag": "_d30",
+ "seed": 2,
+ "delta": 30,
+ "holdout": null,
+ "args": {
+  "cmd": "tegs",
+  "data": "data/CICc",
+  "target": null,
+  "results": "results",
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "delta": 30,
+  "cap": 2048,
+  "hidden": 128,
+  "layers": 2,
+  "lr": 0.002,
+  "epochs": 20,
+  "patience": 6,
+  "device": null,
+  "nomem": false,
+  "no_shuffle": false,
+  "node_feats": true,
+  "adv": false,
+  "adv_prob": 0.5,
+  "lam": 0.5,
+  "adv_ks": [
+   1,
+   5,
+   10,
+   20,
+   50
+  ],
+  "sel_k": 5,
+  "adv_real_only": true,
+  "adv_mem": false,
+  "force": false,
+  "robust": false,
+  "budgets": [
+   0,
+   1,
+   5,
+   10,
+   100
+  ],
+  "latency_caps": [],
+  "lat_events": 5000,
+  "holdout": null,
+  "tag": "_d30",
+  "no_scores": false
+ },
+ "thr": 0.9902241149589794,
+ "thr_op": 0.9893435835838318,
+ "device": "cuda",
+ "history": [
+  {
+   "epoch": 0,
+   "loss": 0.1585830135844363,
+   "val_pr_auc": 0.08542395335987003,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 1,
+   "loss": 0.037285346140564085,
+   "val_pr_auc": 0.9080152324695956,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 2,
+   "loss": 0.045028310426523985,
+   "val_pr_auc": 0.16815331234548414,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 3,
+   "loss": 0.04808835772201569,
+   "val_pr_auc": 0.13545455769701029,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 4,
+   "loss": 0.04879340511452504,
+   "val_pr_auc": 0.2405920980913858,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 5,
+   "loss": 0.05829779243085466,
+   "val_pr_auc": 0.06663428406560822,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 6,
+   "loss": 0.04601557249994105,
+   "val_pr_auc": 0.6447605370759362,
+   "val_pr_auc_attacked": null
+  },
+  {
+   "epoch": 7,
+   "loss": 0.039454258663553586,
+   "val_pr_auc": 0.1432747731263695,
+   "val_pr_auc_attacked": null
+  }
+ ],
+ "val": {
+  "f1_macro": 0.9459280371261689,
+  "mcc": 0.8926837921624455,
+  "accuracy": 0.9774455295952695,
+  "balanced_accuracy": 0.9320749482099162,
+  "recall": 0.8719493289631041,
+  "fpr": 0.007799432543271673,
+  "n": 183999,
+  "n_attack": 22577,
+  "prevalence": 0.12270175381387942,
+  "pr_auc": 0.9080152328755631,
+  "roc_auc": 0.9438469392528455,
+  "tpr_at_1pct_fpr": 0.8746511936926961,
+  "tpr_at_0p1pct_fpr": 0.5489657616158037,
+  "fpr_at_95tpr": 0.7864231641288052,
+  "fpr_at_99tpr": 0.7903383677565635
+ },
+ "test": {
+  "f1_macro": 0.9411534181809138,
+  "mcc": 0.8826786094583738,
+  "accuracy": 0.9751961913871438,
+  "balanced_accuracy": 0.9318324017643114,
+  "recall": 0.8743634028608122,
+  "fpr": 0.010698599332189342,
+  "n": 184004,
+  "n_attack": 22581,
+  "prevalence": 0.12272015825742918,
+  "pr_auc": 0.9010982740526929,
+  "roc_auc": 0.9402531560484185,
+  "tpr_at_1pct_fpr": 0.8630264381559718,
+  "tpr_at_0p1pct_fpr": 0.5480271024312475,
+  "fpr_at_95tpr": 0.8217540251389207,
+  "fpr_at_99tpr": 0.8266108299312985
+ },
+ "test_op": {
+  "f1_macro": 0.9378324164328018,
+  "mcc": 0.8757416652909217,
+  "accuracy": 0.9734897067455055,
+  "balanced_accuracy": 0.933564199940774,
+  "recall": 0.8806518754705284,
+  "fpr": 0.013523475588980505,
+  "n": 184004,
+  "n_attack": 22581,
+  "prevalence": 0.12272015825742918,
+  "pr_auc": 0.9010982740526929,
+  "roc_auc": 0.9402531560484185,
+  "tpr_at_1pct_fpr": 0.8630264381559718,
+  "tpr_at_0p1pct_fpr": 0.5480271024312475,
+  "fpr_at_95tpr": 0.8217540251389207,
+  "fpr_at_99tpr": 0.8266108299312985
+ },
+ "test_cold": {
+  "f1_macro": 0.46667650103946606,
+  "mcc": -0.018333155732136452,
+  "accuracy": 0.8747309841090412,
+  "balanced_accuracy": 0.4985853851094434,
+  "recall": 8.857003675656525e-05,
+  "fpr": 0.0029177998178698205,
+  "n": 184004,
+  "n_attack": 22581,
+  "prevalence": 0.12272015825742918,
+  "pr_auc": 0.11558638216255733,
+  "roc_auc": 0.4979461570701321,
+  "tpr_at_1pct_fpr": 0.0001328550551348479,
+  "tpr_at_0p1pct_fpr": 0.0,
+  "fpr_at_95tpr": 0.8598774647974576,
+  "fpr_at_99tpr": 0.9030559461786735
+ },
+ "test_cold_op": {
+  "f1_macro": 0.46651369437716456,
+  "mcc": -0.020403330681943346,
+  "accuracy": 0.8741603443403404,
+  "balanced_accuracy": 0.4982601526456681,
+  "recall": 8.857003675656525e-05,
+  "fpr": 0.003568264745420417,
+  "n": 184004,
+  "n_attack": 22581,
+  "prevalence": 0.12272015825742918,
+  "pr_auc": 0.11558638216255733,
+  "roc_auc": 0.4979461570701321,
+  "tpr_at_1pct_fpr": 0.0001328550551348479,
+  "tpr_at_0p1pct_fpr": 0.0,
+  "fpr_at_95tpr": 0.8598774647974576,
+  "fpr_at_99tpr": 0.9030559461786735
+ },
+ "test_clean": {
+  "f1_macro": 0.9224384859789769,
+  "mcc": 0.8459951689487862,
+  "accuracy": 0.9727240891817227,
+  "balanced_accuracy": 0.9060966043527581,
+  "recall": 0.8224245511269579,
+  "fpr": 0.010231342421441775,
+  "n": 154202,
+  "n_attack": 15706,
+  "prevalence": 0.10185341305560239,
+  "pr_auc": 0.8604019212266952,
+  "roc_auc": 0.910487070608222,
+  "tpr_at_1pct_fpr": 0.8219151916465045,
+  "tpr_at_0p1pct_fpr": 0.6307143766713358,
+  "fpr_at_95tpr": 0.8874119108133087,
+  "fpr_at_99tpr": 0.8899751617375231
+ },
+ "per_family": {
+  "Bot": {
+   "n": 1894,
+   "recall": 0.9619852164730729
+  },
+  "Brute_Force_-Web": {
+   "n": 13,
+   "recall": 0.23076923076923078
+  },
+  "DDOS_attack-HOIC": {
+   "n": 12166,
+   "recall": 0.9880815387144501
+  },
+  "DDoS_attacks-LOIC-HTTP": {
+   "n": 2523,
+   "recall": 0.915576694411415
+  },
+  "DoS_attacks-GoldenEye": {
+   "n": 1166,
+   "recall": 0.5806174957118353
+  },
+  "DoS_attacks-Hulk": {
+   "n": 465,
+   "recall": 0.9118279569892473
+  },
+  "FTP-BruteForce": {
+   "n": 2480,
+   "recall": 1.0
+  },
+  "Infilteration": {
+   "n": 792,
+   "recall": 0.008838383838383838
+  },
+  "SSH-Bruteforce": {
+   "n": 1082,
+   "recall": 0.0
+  }
+ },
+ "seconds_train": 32.82446622848511,
+ "latency": {
+  "p50_ms_per_batch": 2.197720500134892,
+  "p95_ms_per_batch": 2.957440450154536,
+  "p99_ms_per_batch": 3.3609401403191446,
+  "mean_us_per_event": 1.8337257341921684,
+  "flows_per_sec": 545337.8230744747,
+  "batch_cap": 2048
+ }
+}

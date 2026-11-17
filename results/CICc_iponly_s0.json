@@ -1,0 +1,124 @@
+{
+ "dataset": "CICc",
+ "model": "iponly",
+ "model_base": "iponly",
+ "tag": "",
+ "seed": 0,
+ "delta": 60,
+ "holdout": null,
+ "params": {
+  "n_estimators": 200,
+  "num_leaves": 63,
+  "learning_rate": 0.1
+ },
+ "thr": 0.9999633872844255,
+ "thr_op": 0.6912128087067227,
+ "val": {
+  "f1_macro": 0.9896936482721552,
+  "mcc": 0.9795963353302259,
+  "accuracy": 0.9956304110348426,
+  "balanced_accuracy": 0.9821942685033441,
+  "recall": 0.9643885370066883,
+  "fpr": 0.0,
+  "n": 183999,
+  "n_attack": 22577,
+  "prevalence": 0.12270175381387942,
+  "pr_auc": 0.9967547117186122,
+  "roc_auc": 0.999512938461773,
+  "tpr_at_1pct_fpr": 0.9752265026354254,
+  "tpr_at_0p1pct_fpr": 0.9643885370066883,
+  "fpr_at_95tpr": 0.0,
+  "fpr_at_99tpr": 0.01605729082776821
+ },
+ "test": {
+  "f1_macro": 0.9896822731690047,
+  "mcc": 0.9795740432007632,
+  "accuracy": 0.9956250951066281,
+  "balanced_accuracy": 0.9821752801027412,
+  "recall": 0.9643505602054825,
+  "fpr": 0.0,
+  "n": 184004,
+  "n_attack": 22581,
+  "prevalence": 0.12272015825742918,
+  "pr_auc": 0.9990936996685899,
+  "roc_auc": 0.9998568376625975,
+  "tpr_at_1pct_fpr": 0.998892874540543,
+  "tpr_at_0p1pct_fpr": 0.9712562951153625,
+  "fpr_at_95tpr": 0.0,
+  "fpr_at_99tpr": 0.005259473557051969
+ },
+ "test_op": {
+  "f1_macro": 0.9894844889047933,
+  "mcc": 0.9790035267658584,
+  "accuracy": 0.9955000978239603,
+  "balanced_accuracy": 0.9864082216225343,
+  "recall": 0.9743589743589743,
+  "fpr": 0.0015425311139057013,
+  "n": 184004,
+  "n_attack": 22581,
+  "prevalence": 0.12272015825742918,
+  "pr_auc": 0.9990936996685899,
+  "roc_auc": 0.9998568376625975,
+  "tpr_at_1pct_fpr": 0.998892874540543,
+  "tpr_at_0p1pct_fpr": 0.9712562951153625,
+  "fpr_at_95tpr": 0.0,
+  "fpr_at_99tpr": 0.005259473557051969
+ },
+ "test_clean": {
+  "f1_macro": 0.985715885119314,
+  "mcc": 0.9718304551199315,
+  "accuracy": 0.9948898198466946,
+  "balanced_accuracy": 0.9749140455876735,
+  "recall": 0.9498280911753471,
+  "fpr": 0.0,
+  "n": 154202,
+  "n_attack": 15706,
+  "prevalence": 0.10185341305560239,
+  "pr_auc": 0.9985034298100847,
+  "roc_auc": 0.9998331447833579,
+  "tpr_at_1pct_fpr": 0.9985355914936966,
+  "tpr_at_0p1pct_fpr": 0.9604480325990067,
+  "fpr_at_95tpr": 7.2204251386321626e-06,
+  "fpr_at_99tpr": 0.005371996303142329
+ },
+ "per_family": {
+  "Bot": {
+   "n": 1894,
+   "recall": 1.0
+  },
+  "Brute_Force_-Web": {
+   "n": 13,
+   "recall": 0.0
+  },
+  "DDOS_attack-HOIC": {
+   "n": 12166,
+   "recall": 1.0
+  },
+  "DDoS_attacks-LOIC-HTTP": {
+   "n": 2523,
+   "recall": 1.0
+  },
+  "DoS_attacks-GoldenEye": {
+   "n": 1166,
+   "recall": 1.0
+  },
+  "DoS_attacks-Hulk": {
+   "n": 465,
+   "recall": 1.0
+  },
+  "FTP-BruteForce": {
+   "n": 2480,
+   "recall": 1.0
+  },
+  "Infilteration": {
+   "n": 792,
+   "recall": 0.0
+  },
+  "SSH-Bruteforce": {
+   "n": 1082,
+   "recall": 1.0
+  }
+ },
+ "seconds_fit": 17.715224027633667,
+ "sec_per_flow_infer": 5.330018997192383e-05
+}

@@ -1,0 +1,11 @@
+model,Bot,Brute_Force_-Web,DDOS_attack-HOIC,DDoS_attacks-LOIC-HTTP,DoS_attacks-GoldenEye,DoS_attacks-Hulk,FTP-BruteForce,Infilteration,SSH-Bruteforce
+iponly,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.2,1.0
+lgbm,1.0,0.21,1.0,1.0,1.0,0.97,1.0,0.06,1.0
+tegs,0.58,0.51,1.0,0.99,0.98,0.99,0.67,0.35,1.0
+tegs_nf,0.98,0.08,0.99,0.91,0.74,0.94,0.67,0.0,0.33
+tegs_nf_adv,0.19,0.36,0.55,0.33,0.39,0.62,0.33,0.34,0.33
+tegs_nomem,1.0,0.23,1.0,1.0,1.0,1.0,1.0,0.01,1.0
+tegs_nomem_nf,1.0,0.23,1.0,1.0,1.0,1.0,1.0,0.04,1.0
+tegs_nomem_nf_adv,1.0,0.26,1.0,1.0,1.0,1.0,1.0,0.02,1.0
+topo,1.0,0.15,1.0,1.0,1.0,1.0,1.0,0.05,1.0
+xgb,1.0,0.15,1.0,1.0,1.0,0.97,1.0,0.06,1.0
